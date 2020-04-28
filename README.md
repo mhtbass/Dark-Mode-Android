@@ -1,4 +1,6 @@
 # Dark mode APP
 
-![Image1](/screenshots/1.png)
-![Image2](/screenshots/2.png)
+![Image1](https://github.com/mhtbass/Dark-Mode-Android/blob/master/screenshots/1.PNG)
+![Image2](https://github.com/mhtbass/Dark-Mode-Android/blob/master/screenshots/2.PNG)
+
+
