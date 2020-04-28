@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Dark and Day Mode</string>
+
+    <string name="admob_appid" translatable="false"></string>
+    <string name="banner_id" translatable="false"></string>
+    <string name="instellar_id" translatable="false"></string>
+
+    <string name="night_mode_tile" translatable="false">Night mode</string>
+
+    <string name="night_mode1">Night Mode</string>
+    <string name="day_mode1">Day Mode</string>
+    <string name="auto_mode">Auto</string>
+    <string name="rateapp">Rate app in Play Store</string>
+    <string name="removeads">Remove Ads</string>
+    <string name="failpurc">purchase failed</string>
+    <string name="succespruc">purchase successful</string>
+    <string name="restartapp">Restart app please</string>
+
+
+
+    <string name="night_mode">Night</string>
+    <string name="auto">Auto</string>
+    <string name="day_mode">Day</string>
+    <string name="action_Settings">Settings</string>
+
+</resources>

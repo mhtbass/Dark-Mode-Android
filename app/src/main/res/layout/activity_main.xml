@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bg_day"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.headapp.darkmode.LandingPage">
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/night_top"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:padding="8dp"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_moon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:fontFamily="@font/bold_roboto"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/night_mode1"
+                        android:gravity="center_vertical"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+
+                    <RadioButton
+
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/radioNight"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/night_center"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_sun"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/bold_roboto"
+
+                        android:text="@string/day_mode1"
+                        android:gravity="center_vertical"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+
+                    <RadioButton
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/radioDay"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/night_bottom"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_auto"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:fontFamily="@font/bold_roboto"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/auto_mode"
+                        android:gravity="center_vertical"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+
+                    <RadioButton
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/radioAuto"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:id="@+id/view"
+            android:layout_below="@+id/relative1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:id="@+id/rateUp"
+            android:weightSum="6"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="10dp"
+             android:background="@drawable/night_normal"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:src="@drawable/ic_comment"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:fontFamily="@font/bold_roboto"
+                android:layout_marginLeft="8dp"
+                android:text="@string/rateapp"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/removeADS"
+            android:weightSum="6"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/rateUp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:background="@drawable/night_normal"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:padding="8dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_removeads" />
+
+            <TextView
+                android:fontFamily="@font/bold_roboto"
+                android:layout_marginLeft="8dp"
+                android:text="@string/removeads"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_id">
+
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
